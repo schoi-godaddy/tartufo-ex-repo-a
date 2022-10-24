@@ -7,7 +7,7 @@ exclude-path-patterns = [
 ]
 
 exclude-signatures = [
-    {signature = ""}
+    {signature = "636f4ce82482243024669098f91a51a3f11daafa16eac5a3b66146a476eb1feb", reason="fake random string '22e718e3e1065a4f0e8991324664bbb8781dbf449836414586a73465e8d0926d'" }
 ]
 
 exclude-entropy-patterns = [
