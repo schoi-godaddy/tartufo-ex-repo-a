@@ -1,0 +1,15 @@
+[tool.tartufo]
+repo-path = "."
+regex = true
+entropy = true
+exclude-path-patterns = [
+ {path-pattern = 'tartufo\.toml', reason='tartufo file, not secret'}
+]
+
+exclude-signatures = [
+    {signature = ""}
+]
+
+exclude-entropy-patterns = [
+    {path-pattern = '\.github/workflows/.*\.y(a)ml', pattern = 'uses: .*@[a-f\d]{40}', reason = 'GitHub Actions'}
+]
